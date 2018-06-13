@@ -20,8 +20,8 @@
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <router-link class="nav-link" :to="{name: 'biography'}" :class="{active: mmActiveName === 'lunch'}">
-                        <span class="bold" style="color: #990000;">WZL传记</span>
+                    <router-link class="nav-link" :to="{name: 'biography'}" :class="{active: mmActiveName === 'biography'}">
+                        <span class="bold">WZL传记</span>
                     </router-link>
                 </li>
             </ul>
@@ -34,26 +34,26 @@
 
 export default {
     data() {
-		return {
-			mmActiveName: 'home'
-		}
-	},
-	created() {
-		this.$root.eventHub.$on('mmActive', this.mmActive)
-	},
-	beforeDestroy() {
-		this.$root.eventHub.$off('mmActive', this.mmActive)
-	},
-	methods: {
-		mmActive(am) {
-			this.mmActiveName = am
-		}
-	}
+        return {
+            mmActiveName: 'home'
+        }
+    },
+    created() {
+        this.$root.eventHub.$on('mmActive', this.mmActive)
+    },
+    beforeDestroy() {
+        this.$root.eventHub.$off('mmActive', this.mmActive)
+    },
+    methods: {
+        mmActive(am) {
+            this.mmActiveName = am
+        }
+    }
 }
 </script>
 
 <style scoped>
-	span.bold {
-		font-weight: bold;
-	}
+span.bold {
+    font-weight: bold;
+}
 </style>
