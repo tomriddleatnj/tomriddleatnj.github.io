@@ -27,7 +27,7 @@
 </template>
 
 <style scoped>
-	span.nobr {
-		white-space: nowrap;
-	}
+span.nobr {
+    white-space: nowrap;
+}
 </style>
