@@ -9,7 +9,9 @@
         <main-menu></main-menu>
     </div>
     <div class="layout-content">
-        <router-view></router-view>
+        <div class="content-expander">
+            <router-view></router-view>
+        </div>
     </div>
     <div class="layout-footer">
         <div class="container">
@@ -52,6 +54,9 @@ export default {
 }
 .layout-content {
     flex: 1 0 auto;
+}
+.content-expander {
+	width: 100%;
 }
 .layout-footer {
     flex: 0 0 auto;
