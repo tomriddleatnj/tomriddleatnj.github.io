@@ -36,7 +36,7 @@
                 <br>
                 擅长曲目：Opera 2
             </p>
-</section>
+        </section>
     </div>
 </div>
 </template>
