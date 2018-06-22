@@ -3,3 +3,4 @@ node_modules/
 dist
 dist/*
 npm-debug.log
+index_prod.html

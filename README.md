@@ -1,4 +1,11 @@
+# 前言
+这是一个为让WZL感到happy而创建的一个项目。
+
+## 技术栈
+PHP
+
 ## 运行
+需要node。
 ```
 npm install
 npm run dev
@@ -9,3 +16,8 @@ npm run dev
 npm install
 npm run build
 ```
+
+# 部分截图
+<img src="https://github.com/i627/wzlSite/blob/master/screenshots/001.jpg" />
+
+<img src="https://github.com/i627/wzlSite/blob/master/screenshots/002.jpg" />
